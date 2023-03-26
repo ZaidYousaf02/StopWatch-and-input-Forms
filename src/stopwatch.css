@@ -1,0 +1,65 @@
+.App {
+  text-align: center;
+}
+
+.stopwatch {
+  width: 400px;
+  height: 150px;
+  margin: auto;
+  margin-top: 300px;
+}
+.timer {
+  width: 200px;
+  height: 70px;
+  border: 1px solid;
+  font-size: 45px;
+  font-weight: bold;
+  margin: auto;
+}
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e61b00,
+      0 0 50px #e68a00, 0 0 60px #c4e600, 0 0 70px #e60073c4;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
+      0 0 50px #6e4dff, 0 0 60px #8600bb, 0 0 70px #ff4d4d, 0 0 80px #b84dff;
+  }
+}
+.actions {
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+  margin: auto;
+  margin-top: 20px;
+}
+.btn1 {
+  width: 100px;
+  height: 40px;
+}
+.btn2 {
+  width: 100px;
+  height: 40px;
+}
+.button {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 0.1s ease-in-out;
+}
+
+.button:hover {
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 5px 20px rgba(95, 0, 163, 0.8);
+}
